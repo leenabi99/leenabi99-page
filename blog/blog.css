@@ -1,0 +1,72 @@
+/* styles.css */
+
+/* 공지 스타일 */
+#notice-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #f8d7da; /* 이보리 화이트 */
+    color: #721c24;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #fdf8e4; /* 이보리 화이트 */
+    color: #6c757d; /* 그레이 */
+    padding: 15px 0;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+/* 메인 섹션 스타일 */
+#home {
+    background-color: #fdf8e4; /* 이보리 화이트 */
+    padding: 40px 0;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* 연락 섹션 스타일 */
+#contact {
+    background-color: #d3f7d6; /* 녹차색 */
+    padding: 40px 0;
+}
+
+/* 폼 스타일 */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* 푸터 스타일 */
+footer {
+    background-color: #fdf8e4; /* 이보리 화이트 */
+    color: #6c757d; /* 그레이 */
+    padding: 20px 0;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    #home {
+        padding: 20px 0;
+    }
+}

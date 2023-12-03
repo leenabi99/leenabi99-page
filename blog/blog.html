@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>찹쌀딱지 Blog</title>
+    <style>
+        #notice-container {
+          display: none;
+          background-color: #f8d7da;
+          color: #721c24;
+          padding: 10px;
+          margin: 10px 0;
+          border: 1px solid #f5c6cb;
+          border-radius: 5px;
+        }
+    
+        #close-button {
+          cursor: pointer;
+        }
+      </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha384-GLhlTQ8i6c6z5zjGNTt8ETGPL/C5QAID56VbStqE+9FZ/aa8dG+qI0i0d+3sZl6"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="notice-container">
+        <p><strong>공지:</strong> 이 사이트는 작업 중입니다. 불편을 드려 죄송합니다.</p>
+        <span id="close-button" onclick="closeNotice()">닫기 [X]</span>
+      </div>
+    <header class="bg-dark text-light text-center py-3">
+        <h1>찹쌀딱지 Blog</h1>
+    </header>
+
+    <section id="home" class="container my-5 d-flex align-items-center">
+        <div class="row">
+            <div class="col-md-8">
+                <article class="card mb-4">
+                    <img src="https://via.placeholder.com/800x400" alt="Crested Gecko Image" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">처음으로 분양받아온 딱지</h3>
+                        <p class="card-text">~~종이며 ~~ 어쩌구 딱지 소개하는 글</p>
+                        <a href="#" class="btn btn-primary">더 알아보기</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">크레스티드 게코에 대하여</h4>
+                        <p class="card-text">대충 크레에 대해 설명 글</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container mb-5">
+        <h2 class="text-center mb-4">대장님에게 연락하기</h2>
+        <form>
+            <div class="form-group">
+                <label for="name"><i class="fas fa-user"></i> Your Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email"><i class="fas fa-envelope"></i> Your Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message"><i class="fas fa-comment"></i> Your Message:</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="bg-dark text-light text-center py-3">
+        <p>&copy; 2023 찹쌀딱지 Blog. All rights reserved.</p>
+    </footer>
+    <script>
+        // 공지 닫기 기능
+        function closeNotice() {
+          document.getElementById('notice-container').style.display = 'none';
+        }
+      
+        // 페이지 로드 시 공지 표시
+        window.onload = function() {
+          document.getElementById('notice-container').style.display = 'block';
+        };
+      </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
